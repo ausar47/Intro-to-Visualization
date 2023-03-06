@@ -1,0 +1,100 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>World Mental Health</title>
+		<link rel="stylesheet" href="./src/css/index.css" />
+		<script src="/src/echarts/echarts.js"></script>
+		<script src="/src/echarts/map.js"></script>
+		<script src="/src/echarts/scatter.js"></script>
+		<script src="/src/echarts/barData.js"></script>
+		<script src="/src/echarts/lineData.js"></script>
+		<script src="/src/echarts/world.js"></script>
+		<script src></script>
+	</head>
+
+	<body>
+		<header>
+			<div id="Title">
+				<h1>Word Mental Health Report</h1>
+			</div>
+		</header>
+		<section class="mainbox">
+			<div class="column">
+				<div class="panel bar">
+					<h4>Prevalence of anxiety disorders by age</h4>
+					<div
+						class="chart-all"
+						id="line"
+						style="height: 20rem; width: 27rem"
+					></div>
+					<div class="panel-footer"></div>
+					<div class="panel-footer"></div>
+				</div>
+				<div class="panel bar">
+					<h4>
+						Share of population with mental or substance disorders,
+						male vs female
+					</h4>
+					<div
+						class="chart-all"
+						id="scatter"
+						style="height: 18rem; width: 27rem"
+					></div>
+					<div class="panel-footer"></div>
+					<div class="panel-footer"></div>
+				</div>
+			</div>
+			<div class="column">
+				<button class="button" onclick="toggle()">
+					change
+					<span></span>
+				</button>
+				<div id="twoMap">
+					<div class="map1">
+						<h4>World Population with mental health</h4>
+						<div
+							id="worldMap"
+							style="width: 620px; height: 600px"
+						></div>
+					</div>
+					<div class="map2">
+						<h4>Mental disorders as share of total disease</h4>
+						<div
+							id="mentalHealth"
+							style="width: 620px; height: 600px"
+						></div>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="panel bar">
+					<h4>Prevalence by mental and substance use disorder</h4>
+					<div
+						class="chart-all"
+						id="bar"
+						style="height: 18rem; width: 27rem"
+					></div>
+					<div class="panel-footer"></div>
+					<div class="panel-footer"></div>
+				</div>
+				<div class="panel bar">
+					<h4>
+						The rate of death due to mental illness by continent
+					</h4>
+					<div
+						class="chart-all"
+						id="pie"
+						style="height: 18rem; width: 27rem"
+					></div>
+					<div class="panel-footer"></div>
+					<div class="panel-footer"></div>
+				</div>
+			</div>
+		</section>
+	</body>
+	<script src="/src/echarts/index.js"></script>
+	<script src="/src/echarts/worldMap.js"></script>
+	<script src="/src/echarts/pie.js"></script>
+	<script src="/src/echarts/mentalDisorders.js"></script>
+	<script src="/src/js/com.js"></script>
+</html>
